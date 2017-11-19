@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00eaff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/screen_edit_">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/edit_QUESTION"
+                android:background="@drawable/shape__button_white"
+                android:layout_below="@+id/textView11"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_alignRight="@+id/edit_ANSWER"
+                android:layout_alignEnd="@+id/edit_ANSWER"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/edit_ANSWER"
+                android:background="@drawable/shape__button_white"
+                android:layout_below="@+id/textView12"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_toStartOf="@+id/textView26"
+                android:layout_toLeftOf="@+id/textView26"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Add Database"
+                android:id="@+id/textView9"
+                android:autoText="false"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/button_back_edit"
+                android:layout_toRightOf="@+id/textView10"
+                android:layout_toEndOf="@+id/textView10" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:id="@+id/btn_addDB"
+                android:background="@drawable/shape__button_white"
+                android:layout_below="@+id/textView16"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/image_ADD"
+                android:src="@drawable/shape_button_gray"
+                android:layout_above="@+id/textView16"
+                android:layout_toLeftOf="@+id/textView27"
+                android:layout_toStartOf="@+id/textView27" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Title"
+                android:id="@+id/textView10"
+                android:layout_below="@+id/textView7"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Question"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/spinnerspinner_data"
+                android:layout_toRightOf="@+id/textView13"
+                android:layout_toEndOf="@+id/textView13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Answer"
+                android:id="@+id/textView12"
+                android:layout_alignTop="@+id/textView18"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_toEndOf="@+id/textView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="    "
+                android:id="@+id/textView13"
+                android:layout_below="@+id/btn_addDB"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="  "
+                android:id="@+id/textView15"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView16"
+                android:layout_below="@+id/edit_ANSWER"
+                android:layout_toLeftOf="@+id/edit_ANSWER"
+                android:layout_toStartOf="@+id/edit_ANSWER" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView17"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_below="@+id/textView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView18"
+                android:layout_below="@+id/edit_QUESTION"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10" />
+
+            <ListView
+                android:id="@+id/listqc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape__button_white"
+                android:layout_below="@+id/textView8"
+                android:layout_above="@+id/textView25"
+                android:layout_toLeftOf="@+id/textView27"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8">
+
+            </ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Question Database"
+                android:id="@+id/textView8"
+                android:layout_alignTop="@+id/textView13"
+                android:layout_alignLeft="@+id/textView16"
+                android:layout_alignStart="@+id/textView16"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/textView7"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    "
+                android:id="@+id/textView19"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_marginRight="62dp"
+                android:layout_marginEnd="62dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerspinner_data"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/shape__button_white"
+                android:layout_below="@+id/textView10"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_alignRight="@+id/edit_QUESTION"
+                android:layout_alignEnd="@+id/edit_QUESTION"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView25"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="  "
+                android:id="@+id/textView26"
+                android:layout_alignBottom="@+id/image_ADD"
+                android:layout_toLeftOf="@+id/image_ADD"
+                android:layout_toStartOf="@+id/image_ADD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    "
+                android:id="@+id/textView27"
+                android:layout_alignTop="@+id/listqc"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="&lt;"
+                android:id="@+id/button_back_edit"
+                android:layout_gravity="left"
+                android:background="@drawable/shape__button_white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

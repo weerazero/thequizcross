@@ -1,0 +1,233 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tni_it09.thequizcross.MainMenu"
+    android:background="#e4e4e4">
+
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rea"
+        android:divider="@null"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:id="@+id/rea"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/listHeaderImage"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/viewb"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:text="EDIT QUIZ"
+            android:id="@+id/button_addQuiz"
+            android:background="@drawable/shape__button_white"
+            android:textSize="10sp"
+            android:layout_height="35dp"
+            android:layout_width="55dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button_add_Titlex"
+            android:layout_alignStart="@+id/button_add_Titlex" />
+
+        <Button
+            android:text="EDIT TITLE"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:id="@+id/button_add_Titlex"
+            android:background="@drawable/shape__button_white"
+            android:textSize="10sp"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_alignBaseline="@+id/textView18"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:src="@drawable/human"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:text="  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/textView30" />
+
+        <TextView
+            android:text="Beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+        <TextView
+            android:text="Game All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/textView5"
+            android:layout_alignRight="@+id/textView18"
+            android:layout_alignEnd="@+id/textView18" />
+
+        <TextView
+            android:text="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignRight="@+id/textView14"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/point"
+            android:textStyle="normal|bold"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/button_addQuiz"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15" />
+
+        <TextView
+            android:text="Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_alignBaseline="@+id/point"
+            android:layout_alignBottom="@+id/point"
+            android:layout_toRightOf="@+id/point"
+            android:layout_toEndOf="@+id/point"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:text="The Quiz Cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textStyle="normal|bold"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:text="Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/point"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name" />
+
+
+    </RelativeLayout>
+
+
+    <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@color/background_floating_material_light">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_button_green"
+                android:text="Start"
+                android:id="@+id/btn_menuone"
+                android:layout_above="@+id/btn_menutwo"
+                android:layout_alignLeft="@+id/btn_menutwo"
+                android:layout_alignStart="@+id/btn_menutwo" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_button_green"
+                android:text="Add Quiz"
+                android:id="@+id/btn_menutwo"
+                android:layout_above="@+id/btn_three"
+                android:layout_alignLeft="@+id/btn_three"
+                android:layout_alignStart="@+id/btn_three" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_button_green"
+                android:text="ADD TITLE"
+                android:id="@+id/btn_three"
+                android:layout_above="@+id/btn_exit"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_button_green"
+                android:text="Exit"
+                android:id="@+id/btn_exit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/btn_three"
+                android:layout_alignStart="@+id/btn_three" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/logox"
+                android:layout_above="@+id/btn_menuone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp" />
+        </RelativeLayout>
+    -->
+</RelativeLayout>
